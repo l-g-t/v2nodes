@@ -6,7 +6,7 @@ on:
       - main  # 触发主分支推送时运行
   workflow_dispatch:  # 允许手动触发
   schedule:
-    - cron: '0 */2 * * *'  # 每两个小时运行一次
+    - cron: '0 */200 * * *'  # 每两个小时运行一次
 
 jobs:
   scraper:
